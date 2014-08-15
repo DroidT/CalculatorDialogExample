@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/calculator_display"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/calculator_button_height"
+        android:gravity="right"
+        android:text="@string/zero" />
+
+    <Button
+        android:id="@+id/calculator_clear"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/calculator_button_height"
+        android:layout_alignLeft="@+id/calculator_display"
+        android:layout_below="@+id/calculator_display"
+        android:gravity="center"
+        android:paddingTop="@dimen/calculator_spacing"
+        android:text="@string/clear" />
+
+    <RelativeLayout
+        android:id="@+id/calculator_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/calculator_display"
+        android:layout_below="@+id/calculator_clear"
+        android:gravity="center_horizontal" >
+
+        <!-- Row of numbers -->
+
+        <Button
+            android:id="@+id/calculator_seven"
+            style="@style/calculator_button_style"
+            android:text="@string/seven" />
+
+        <Button
+            android:id="@+id/calculator_eight"
+            style="@style/calculator_button_style"
+            android:layout_toRightOf="@+id/calculator_seven"
+            android:text="@string/eight" />
+
+        <Button
+            android:id="@+id/calculator_nine"
+            style="@style/calculator_button_style"
+            android:layout_toRightOf="@+id/calculator_eight"
+            android:text="@string/nine" />
+
+        <Button
+            android:id="@+id/calculator_plus"
+            style="@style/calculator_button_style"
+            android:layout_toRightOf="@+id/calculator_nine"
+            android:text="@string/plus" />
+        <!-- Second row of numbers -->
+
+        <Button
+            android:id="@+id/calculator_four"
+            style="@style/calculator_button_style"
+            android:layout_alignLeft="@+id/calculator_seven"
+            android:layout_below="@+id/calculator_seven"
+            android:text="@string/four" />
+
+        <Button
+            android:id="@+id/calculator_five"
+            style="@style/calculator_button_style"
+            android:layout_below="@+id/calculator_seven"
+            android:layout_toRightOf="@+id/calculator_four"
+            android:text="@string/five" />
+
+        <Button
+            android:id="@+id/calculator_six"
+            style="@style/calculator_button_style"
+            android:layout_below="@+id/calculator_seven"
+            android:layout_toRightOf="@+id/calculator_five"
+            android:text="@string/six" />
+
+        <Button
+            android:id="@+id/calculator_minus"
+            style="@style/calculator_button_style"
+            android:layout_below="@+id/calculator_seven"
+            android:layout_toRightOf="@+id/calculator_six"
+            android:text="@string/minus" />
+        <!-- Third row of numbers -->
+
+        <Button
+            android:id="@+id/calculator_one"
+            style="@style/calculator_button_style"
+            android:layout_alignLeft="@+id/calculator_seven"
+            android:layout_below="@+id/calculator_four"
+            android:text="@string/one" />
+
+        <Button
+            android:id="@+id/calculator_two"
+            style="@style/calculator_button_style"
+            android:layout_below="@+id/calculator_four"
+            android:layout_toRightOf="@+id/calculator_one"
+            android:text="@string/two" />
+
+        <Button
+            android:id="@+id/calculator_three"
+            style="@style/calculator_button_style"
+            android:layout_below="@+id/calculator_four"
+            android:layout_toRightOf="@+id/calculator_two"
+            android:text="@string/three" />
+
+        <Button
+            android:id="@+id/calculator_divide"
+            style="@style/calculator_button_style"
+            android:layout_below="@+id/calculator_four"
+            android:layout_toRightOf="@+id/calculator_three"
+            android:text="@string/divide" />
+        <!-- 4th row of numbers -->
+
+        <Button
+            android:id="@+id/calculator_decimal"
+            style="@style/calculator_button_style"
+            android:layout_alignLeft="@+id/calculator_seven"
+            android:layout_below="@+id/calculator_one"
+            android:text="@string/point" />
+
+        <Button
+            android:id="@+id/calculator_zero"
+            style="@style/calculator_button_style"
+            android:layout_below="@+id/calculator_one"
+            android:layout_toRightOf="@+id/calculator_decimal"
+            android:text="@string/zero" />
+
+        <Button
+            android:id="@+id/calculator_equals"
+            style="@style/calculator_button_style"
+            android:layout_below="@+id/calculator_one"
+            android:layout_toRightOf="@+id/calculator_zero"
+            android:text="@string/equals" />
+
+        <Button
+            android:id="@+id/calculator_multiply"
+            style="@style/calculator_button_style"
+            android:layout_below="@+id/calculator_one"
+            android:layout_toRightOf="@+id/calculator_equals"
+            android:text="@string/multiply" />
+    </RelativeLayout>
+
+</RelativeLayout>

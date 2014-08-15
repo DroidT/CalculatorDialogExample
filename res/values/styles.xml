@@ -1,0 +1,8 @@
+<resources>
+
+    <style name="calculator_button_style" parent="@android:style/Widget.Button">
+        <item name="android:layout_height">@dimen/calculator_button_height</item>
+        <item name="android:layout_width">@dimen/calculator_button_height</item>
+    </style>
+
+</resources>
